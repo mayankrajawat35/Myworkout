@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:contentDescription="Login"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/registerLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="100dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:foregroundGravity="clip_horizontal"
+            android:src="@mipmap/myworkout_logo" />
+
+        <TextView
+            android:id="@+id/createAcc"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center_horizontal"
+            android:text="Create a new account"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:id="@+id/fillForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Fill out the form and sign up for free."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/registrationEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/registrationPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:id="@+id/radiogroup">
+
+            <RadioButton
+                android:id="@+id/maleRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClicked"
+                android:text="Male"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/femaleRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="Female"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/signupImgBtn"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="auto"
+                android:onClick="signupClicked"
+                app:srcCompat="@mipmap/next_icon" />
+
+            <TextView
+                android:id="@+id/signupText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/signupImgBtn"
+                android:text="Sign up"
+                android:textColor="#0D9687"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/regbackBtnImg"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="cancleClicked"
+                app:srcCompat="@mipmap/back_icon" />
+
+            <TextView
+                android:id="@+id/regcancleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/regbackBtnImg"
+                android:clickable="false"
+                android:text="Cancel"
+                android:textColor="#646060"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <!-- Email Label -->
+
+        <!-- Password Label -->
+
+    </LinearLayout>
+</ScrollView>

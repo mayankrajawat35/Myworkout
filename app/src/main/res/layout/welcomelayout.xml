@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:contentDescription="Welcome page"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/loginLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="150dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:foregroundGravity="clip_horizontal"
+            android:src="@mipmap/myworkout_logo" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center_horizontal"
+            android:text="Myworkout GO"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:id="@+id/enterpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Start by entering your email address."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:focusableInTouchMode="true"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/loginImgBtn"
+                android:layout_width="62dp"
+                android:layout_height="39dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:focusable="auto"
+                android:onClick="nextBtnClick"
+                app:srcCompat="@mipmap/next_icon" />
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/loginImgBtn"
+                android:text="Next"
+                android:textColor="#0D9687"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <!-- Email Label -->
+
+        <!-- Password Label -->
+
+    </LinearLayout>
+</ScrollView>
